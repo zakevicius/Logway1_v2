@@ -15,7 +15,8 @@ module.exports = merge(config, {
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html',
-      minimize: false
+      minimize: false,
+      favicon: "./src/assets/images/logo/favicon.ico"
     }),
     new ErrorOverlayPlugin()
   ],

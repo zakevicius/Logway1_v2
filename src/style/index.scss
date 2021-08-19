@@ -66,12 +66,13 @@ h3 {
 header {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   height: 100vh;
   width: 100%;
 
   .headerLogo, .headerInfo {
-    width: 50%;
-    height: 100%;
+    flex-basis: 50%;
+    height: 90%;
   }
 
   .headerLogo {
@@ -128,6 +129,12 @@ header {
       }
     }
   }
+
+  .headerLine {
+    flex-basis: 100%;
+    font-size: 20pt;
+    text-align: center;
+  }
 }
 
 section {
@@ -137,10 +144,6 @@ section {
   height: 400px;
   justify-content: center;
   overflow: hidden;
-
-  &:nth-child(even) {
-    flex-direction: row-reverse;
-  }
 
   .workers {
     position: relative;
@@ -159,6 +162,7 @@ section {
       height: 100%;
       background: 50% 50% / contain no-repeat url('../assets/images/logo/logo_big_white.jpg');
       opacity: 0.03;
+      z-index: 1;
     }
 
     .worker {
@@ -174,6 +178,7 @@ section {
       // border: 1px solid #eee;
       border-radius: 50px;
       box-shadow: 3px 3px 10px #ddd;
+      z-index: 2;
 
       img, p>i {
         margin: 0 1rem;
@@ -231,10 +236,15 @@ section {
     }
   }
 
-  &:nth-child(even) {
+  &:nth-child(even):not(:last-child) {
     flex-direction: row-reverse;
     background: #f8f8f8 !important;
 
+    h1 {
+      &:after {
+        background: linear-gradient(to right, #f8f8f8 10%, #555, $red, #555, #f8f8f8 90%);
+      }
+    }
 
     .background {
       &:after{
@@ -275,18 +285,6 @@ section {
   }
 }
 
-// section::after {
-//     content: '';
-//     box-sizing: border-box;
-//     position: inherit;
-//     left: -1000px;
-//     top: 10%;
-//     width: 1000px;
-//     height: $sectionTitleHeight;
-//     border-right: 1px solid #ddd;
-//     border-radius: 100px;
-// }
-
 .warehouse .background {
   background: center / cover no-repeat url(../assets/images/warehouse_p.jpg);
 }
@@ -322,21 +320,68 @@ section.contacts {
     align-items: center;
     background: $black;
     overflow: hidden;
+    padding-top: 5em;
+
+    .companyInfo-actualInfo, .wHours {
+      padding-bottom: 5em;
+    }
 
     .companyInfo-actualInfo {
+      flex: 1;
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
       align-items: center;
-      height: 200px;
+      text-align: center;
       width: 100%;
-      font-size: 1.2rem;
+      font-size: 20pt;
 
       p {
+        width: 100%;
+        display: inline-block;
         color: #fff;
         margin: 1em;
       }
+
+      p > * {
+        color: inherit;
+      }
     }
      
+  .wHours {
+    flex: 1;
+
+    table {
+      margin: auto;
+      flex-basis: 250px;
+      margin-bottom: 10px;
+      border-collapse: collapse;
+      width: 300px;
+      font-size: 20pt;
+    }
+    
+    caption {
+      padding: 10px;
+      margin-bottom: 10px;
+      color: white;
+    }
+    
+    table tr td {
+      text-align: center;
+      vertical-align: middle;
+      padding: 10px;
+      border-radius: 0px;
+      color: white;
+    }
+    
+    table tr td:first-child {
+      border-right: 2px solid rgb(183, 13, 13);
+    }
+    
+    table tr:nth-child(6) td {
+      border-top: 2px solid rgb(183, 13, 13);
+    }
+  }
   }
 
   .map {
@@ -351,11 +396,6 @@ section.contacts {
       opacity: 0.9;
       filter: grayscale(80%);
     }
-  }
-
-  .wHours {
-    color: #fff;
-    padding: 2em;
   }
 }
 

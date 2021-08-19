@@ -9,8 +9,8 @@ const CompanyInfo = () => {
           <p>Galinės g. 1, korp. C, 310b kab.</p>
           <p>Galinės k., Avižienių sen.</p>
           <p>Vilniaus raj.  LT-14247</p>
-          <p>+37062176494</p>
-          <p>info@logway1.lt</p>
+          <p><a href="tel:+37062176494">+37062176494</a></p>
+          <p><a href="mailto:info@logway1.lt">info@logway1.lt</a></p>
         </div>
         <WorkingHours />
         <Map />

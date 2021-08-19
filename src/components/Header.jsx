@@ -50,6 +50,9 @@ const Header = () => {
         <h2 className='headerInfo-title'><span className='red'>K</span>ontaktai</h2>
       </div>
     </div>
+    <div className="headerLine">
+      Meet your future partner today
+    </div>
   </header>;
 };
 

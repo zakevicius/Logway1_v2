@@ -26,7 +26,8 @@ module.exports = merge(config, {
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html',
-      minimize: true
+      minimize: true,
+      favicon: "./src/assets/images/logo/favicon.ico"
     }),
     new MiniCssExtractPlugin({
       filename: '[name].[contentHash].css'
