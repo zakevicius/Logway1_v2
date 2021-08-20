@@ -166,9 +166,8 @@ section {
       flex-wrap: wrap;
       align-items: center;
       justify-content: center;
-      height: 250px;
-      width: 600px;
-      min-width: 600px;
+      min-height: 250px;
+      max-width: 600px;
       padding: 2em;
       margin: 1em;
       // border: 1px solid #eee;
@@ -185,6 +184,7 @@ section {
         align-items: center;
         width: 250px;
         font-size: 14pt;
+        margin: 1rem 0;
       }
 
       a>i {
