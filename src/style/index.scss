@@ -310,26 +310,25 @@ section.contacts {
 
   .companyInfo {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
     background: $black;
     overflow: hidden;
     padding-top: 5em;
 
-    .companyInfo-actualInfo, .wHours {
-      padding-bottom: 5em;
+    .companyInfo-actualInfo, .wHours *{
+      margin: 1em;
+    }
+
+    .companyInfo-actualInfo p, .wHours table *{
+      font-size: 14pt;
     }
 
     .companyInfo-actualInfo {
       flex: 1;
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      width: 100%;
-      font-size: 20pt;
 
       p {
         width: 100%;
@@ -343,46 +342,47 @@ section.contacts {
       }
     }
      
-  .wHours {
-    flex: 1;
+    .wHours {
+      flex: 1;
 
-    table {
-      margin: auto;
-      flex-basis: 250px;
-      margin-bottom: 10px;
-      border-collapse: collapse;
-      width: 300px;
-      font-size: 20pt;
+      table {
+        margin: auto;
+        flex-basis: 250px;
+        margin-bottom: 10px;
+        border-collapse: collapse;
+        width: 220px;
+        font-size: 20pt;
+      }
+      
+      caption {
+        padding: 10px;
+        margin-bottom: 10px;
+        color: white;
+      }
+      
+      table tr td {
+        text-align: center;
+        vertical-align: middle;
+        padding: 10px;
+        border-radius: 0px;
+        color: white;
+      }
+      
+      table tr td:first-child {
+        border-right: 2px solid rgb(183, 13, 13);
+      }
+      
+      table tr:nth-child(6) td {
+        border-top: 2px solid rgb(183, 13, 13);
+      }
     }
-    
-    caption {
-      padding: 10px;
-      margin-bottom: 10px;
-      color: white;
-    }
-    
-    table tr td {
-      text-align: center;
-      vertical-align: middle;
-      padding: 10px;
-      border-radius: 0px;
-      color: white;
-    }
-    
-    table tr td:first-child {
-      border-right: 2px solid rgb(183, 13, 13);
-    }
-    
-    table tr:nth-child(6) td {
-      border-top: 2px solid rgb(183, 13, 13);
-    }
-  }
   }
 
   .map {
-    width: 100%;
+    flex: 3;
     height: 400px;
     background: $black;
+    margin-left: 2em;
     
     iframe {
       width: 100%;
@@ -439,10 +439,28 @@ footer {
   }
 }
 
-@media only screen and (max-width: 1000px) {
-  header {
-    h2 {
-      font-size: 16pt;
+@media only screen and (max-width: 1200px) {
+  section.contacts {
+    .companyInfo {
+      flex-wrap: wrap;
+      padding: 1em 0;
+
+      &>* {
+        margin-bottom: 2em;
+      }
+  
+      .companyInfo-actualInfo {
+        padding-left: 10%;
+      }
+       
+      .wHours {
+        padding-right: 10%;
+      }
+    }
+  
+    .map {
+      flex-basis: 100%;
+      margin: 0;
     }
   }
 }
@@ -450,6 +468,21 @@ footer {
 @media only screen and (max-width: 1000px) {
   header {
     max-height: 600px;
+
+    h2 {
+      font-size: 16pt;
+    }
+  }
+
+  section .background {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  section .workers .worker p {
+    width: 200px;
+    font-size: 12pt;
   }
 }
 
@@ -470,26 +503,53 @@ footer {
   }
 
   section {  
-    .background {
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      opacity: 0;
-      border-radius: 0 5px 5px 0;
+    height: 100%;
+
+    h1 {
+      font-size: 16pt;
+      font-weight: lighter;
     }
 
     .sectionContent {
-      display: flex;
-      margin-top: 270px;
-      padding-left: 100px;
-
-      li {
-        display: flex;
-        align-items: center;
-        right: 0px;
-        font-size: 16px;
-        min-height: 75px;
+      ul {
+        li {
+          flex-basis: 100%;
+          font-size: 10pt;
+        }
       }
     }
+
+    &.contacts {
+
+      .companyInfo {  
+        .companyInfo-actualInfo {
+          padding: 0;
+          flex-basis: 100%;
+          text-align: center;
+
+          p, p>a {
+            font-size: 12pt;
+          }
+        }
+          
+        .wHours {
+          padding: 0;
+          flex-basis: 100%;
+          
+          table * {
+            font-size: 12pt;
+          }
+        }
+      
+        .map {
+          flex-basis: 100%;
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  footer {
+    font-size: 10pt;
   }
 }
