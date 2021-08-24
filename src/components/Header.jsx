@@ -1,10 +1,8 @@
 import React from 'react';
-import { useTranslation, withTranslation, Trans } from 'react-i18next';
+import { withTranslation } from 'react-i18next';
 import sections from './elements/sections.json';
 
 const Header = ({ t }) => {
-  // const { t } = useTranslation('translation');
-
   const onClick = (e) => {
     const scrollTarget = document.getElementById(
       e.currentTarget.dataset.section
@@ -44,9 +42,8 @@ const Header = ({ t }) => {
           >
             <div className='background'></div>
             <h2 className='headerInfo-title'>
-              {t('title')}
-              <span className='red'>{item.title[0]}</span>
-              {item.title.slice(1)}
+              <span className='red'>{t(item.title)[0]}</span>
+              {t(item.title).slice(1)}
             </h2>
           </div>
         ))}
@@ -59,7 +56,8 @@ const Header = ({ t }) => {
         >
           <div className='background'></div>
           <h2 className='headerInfo-title'>
-            <span className='red'>K</span>ontaktai
+            <span className='red'>{t('header.contacts')[0]}</span>
+            {t('header.contacts').slice(1)}
           </h2>
         </div>
       </div>

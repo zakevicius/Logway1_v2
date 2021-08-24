@@ -1,36 +1,39 @@
-import React from "react";
+import React from 'react';
+import { withTranslation } from 'react-i18next';
 
-const WorkingHours = () => {
-  return <div className='wHours'>
-    <table>
-      <caption>Darbo laikas</caption>
-      <tbody>
-        <tr>
-          <td>Pr</td>
-          <td rowSpan="5">9:00 - 18:00</td>
-        </tr>
-        <tr>
-          <td>An</td>
-        </tr>
-        <tr>
-          <td>Tr</td>
-        </tr>
-        <tr>
-          <td>Kt</td>
-        </tr>
-        <tr>
-          <td>Pn</td>
-        </tr>
-        <tr>
-          <td>Š</td>
-          <td rowSpan="2">-</td>
-        </tr>
-        <tr>
-          <td>S</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+const WorkingHours = ({ t }) => {
+  return (
+    <div className='wHours'>
+      <table>
+        <caption>{t('footer.workHours.title')}</caption>
+        <tbody>
+          <tr>
+            <td>{t('footer.workHours.1')}</td>
+            <td rowSpan='5'>{t('footer.workHours.time')}</td>
+          </tr>
+          <tr>
+            <td>{t('footer.workHours.2')}</td>
+          </tr>
+          <tr>
+            <td>{t('footer.workHours.3')}</td>
+          </tr>
+          <tr>
+            <td>{t('footer.workHours.4')}</td>
+          </tr>
+          <tr>
+            <td>{t('footer.workHours.5')}</td>
+          </tr>
+          <tr>
+            <td>{t('footer.workHours.6')}</td>
+            <td rowSpan='2'>-</td>
+          </tr>
+          <tr>
+            <td>{t('footer.workHours.7')}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  );
 };
 
-export default WorkingHours;
+export default withTranslation()(WorkingHours);
