@@ -356,7 +356,7 @@ section.contacts {
     align-items: center;
     background: $black;
     overflow: hidden;
-    padding-top: 5em;
+    padding-top: 3em;
 
     .companyInfo-actualInfo,
     .wHours * {
@@ -365,7 +365,7 @@ section.contacts {
 
     .companyInfo-actualInfo p,
     .wHours table * {
-      font-size: 14pt;
+      font-size: 12pt;
     }
 
     .companyInfo-actualInfo {
