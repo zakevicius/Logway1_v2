@@ -1,40 +1,40 @@
 [
   {
     "section": "customs",
-    "title": "Muitinės paslaugos",
+    "title": "services.customs.title",
     "list": [
-      "Importo procedūros",
-      "Eksporto procedūros",
-      "Tranzito procedūros",
-      "Tarpininkavimas muitinėje",
-      "Muitinės sandėliavimo procedūros",
-      "Važtaraščių ir TIR knygelių pildymas",
-      "Fitosanitarinių sertifikatų užsakymas"
+      "services.customs.item1",
+      "services.customs.item2",
+      "services.customs.item3",
+      "services.customs.item4",
+      "services.customs.item5",
+      "services.customs.item6",
+      "services.customs.item7"
     ]
   },
   {
     "section": "warehouse",
-    "title": "Sandėlio paslaugos",
+    "title": "services.warehouse.title",
     "list": [
-      "Sandėliavimas",
-      "Krovos darbai",
-      "Muitinės sandėliavimas",
-      "Papildomi sandėlio darbai",
-      "Krovinio apdirbimo darbai",
-      "Nestandartinių krovinių krovimas",
-      "Sandėlio krovinių programa"
+      "services.warehouse.item1",
+      "services.warehouse.item2",
+      "services.warehouse.item3",
+      "services.warehouse.item4",
+      "services.warehouse.item5",
+      "services.warehouse.item6",
+      "services.warehouse.item7"
     ]
   },
   {
     "section": "logistics",
-    "title": "Logistikos paslaugos",
+    "title": "services.logistics.title",
     "list": [
-      "Standartinių krovinių pervežimas",
-      "Negabaritinių krovinių, didelio tūrio krovinių pervežimas",
-      "Pavojingų krovinių gabenimas ( ADR )",
-      "Krovinių pervežimas, kuriems būtinas temperatūros režimas",
-      "Krovinių pervežimas Europoje ir NVS šalyse",
-      "Muitinės paslaugos"
+      "services.logistics.item1",
+      "services.logistics.item2",
+      "services.logistics.item3",
+      "services.logistics.item4",
+      "services.logistics.item5",
+      "services.logistics.item6"
     ]
-  }  
-]         
+  }
+]

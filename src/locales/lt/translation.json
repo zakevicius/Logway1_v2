@@ -1,0 +1,55 @@
+{
+  "header": {
+    "contacts": "Kontaktai"
+  },
+  "services": {
+    "customs": {
+      "title": "Muitinės paslaugos",
+      "item1": "Importo procedūros",
+      "item2": "Eksporto procedūros",
+      "item3": "Tranzito procedūros",
+      "item4": "Tarpininkavimas muitinėje",
+      "item5": "Muitinės sandėliavimo procedūros",
+      "item6": "Važtaraščių ir TIR knygelių pildymas",
+      "item7": "Fitosanitarinių sertifikatų užsakymas"
+    },
+    "warehouse": {
+      "title": "Sandėlio paslaugos",
+      "item1": "Sandėliavimas",
+      "item2": "Krovos darbai",
+      "item3": "Muitinės sandėliavimas",
+      "item4": "Papildomi sandėlio darbai",
+      "item5": "Krovinio apdirbimo darbai",
+      "item6": "Nestandartinių krovinių krovimas",
+      "item7": "Sandėlio krovinių programa"
+    },
+    "logistics": {
+      "title": "Logistikos paslaugos",
+      "item1": "Standartinių krovinių pervežimas",
+      "item2": "Negabaritinių krovinių, didelio tūrio krovinių pervežimas",
+      "item3": "Pavojingų krovinių gabenimas ( ADR )",
+      "item4": "Krovinių pervežimas, kuriems būtinas temperatūros režimas",
+      "item5": "Krovinių pervežimas Europoje ir NVS šalyse",
+      "item6": "Muitinės paslaugos"
+    }
+  },
+  "footer": {
+    "address": {
+      "line1": "Galinės g. 1, korp. C, 310b kab.",
+      "line2": "Galinės k., Avižienių sen.",
+      "line3": "Vilniaus raj. LT-14247, Lietuva"
+    },
+    "workHours": {
+      "title": "Darbo laikas",
+      "time": "9:00 - 18:00",
+      "1": "Pr",
+      "2": "An",
+      "3": "Tr",
+      "4": "Kt",
+      "5": "Pn",
+      "6": "Š",
+      "7": "S"
+    }
+  },
+  "copyright": "Visos teisės saugomos. UAB Logway1"
+}

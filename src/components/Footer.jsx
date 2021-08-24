@@ -1,11 +1,12 @@
-import React from "react";
+import React from 'react';
+import { withTranslation } from 'react-i18next';
 
-const Footer = () => {
+const Footer = ({ t }) => {
   return (
     <footer>
-      &copy; {new Date().getFullYear()} Visos teisės saugomos. UAB Logway1
+      &copy; {new Date().getFullYear()} {t('copyright')}
     </footer>
   );
 };
 
-export default Footer;
+export default withTranslation()(Footer);
