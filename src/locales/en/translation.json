@@ -2,6 +2,9 @@
   "header": {
     "contacts": "Contacts"
   },
+  "contacts": {
+    "title": "Contacts"
+  },
   "services": {
     "customs": {
       "title": "Customs services",

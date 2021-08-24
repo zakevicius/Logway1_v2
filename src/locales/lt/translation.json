@@ -2,6 +2,9 @@
   "header": {
     "contacts": "Kontaktai"
   },
+  "contacts": {
+    "title": "Kontaktai"
+  },
   "services": {
     "customs": {
       "title": "Muitinės paslaugos",

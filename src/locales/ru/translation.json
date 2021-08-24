@@ -2,6 +2,9 @@
   "header": {
     "contacts": "Контакты"
   },
+  "contacts": {
+    "title": "Контакты"
+  },
   "services": {
     "customs": {
       "title": "Таможенные услуги",
