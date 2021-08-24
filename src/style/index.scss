@@ -483,9 +483,11 @@ footer {
 }
 
 @media only screen and (max-width: 1200px) {
-  header .headerInfo .header-item h2 {
-    font-weight: lighter;
-    font-size: 22pt;
+  header {
+    h2 {
+      font-weight: lighter;
+      font-size: 22pt;
+    }
   }
 
   section.contacts {
