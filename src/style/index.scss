@@ -483,6 +483,11 @@ footer {
 }
 
 @media only screen and (max-width: 1200px) {
+  header .headerInfo .header-item h2 {
+    font-weight: lighter;
+    font-size: 22pt;
+  }
+
   section.contacts {
     .companyInfo {
       flex-wrap: wrap;
@@ -513,7 +518,7 @@ footer {
     max-height: 600px;
 
     h2 {
-      font-size: 16pt;
+      font-size: 14pt;
     }
   }
 
