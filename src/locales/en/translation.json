@@ -1,0 +1,55 @@
+{
+  "header": {
+    "contacts": "Contacts"
+  },
+  "services": {
+    "customs": {
+      "title": "Customs services",
+      "item1": "Import procedures",
+      "item2": "Export procedures",
+      "item3": "Transit procedures",
+      "item4": "Customs Brokerage",
+      "item5": "Customs warehouses",
+      "item6": "Filling of CMR and TIR Carnets",
+      "item7": "Phytosanitary certificates"
+    },
+    "warehouse": {
+      "title": "Warehouse services",
+      "item1": "Warehousing",
+      "item2": "Loading/unloading operations",
+      "item3": "Customs warehousing",
+      "item4": "Custom cargo operations",
+      "item5": "Additional cargo processing works",
+      "item6": "Bulky cargo operations",
+      "item7": "Warehouse software"
+    },
+    "logistics": {
+      "title": "Logistics services",
+      "item1": "Transportation of standard cargo",
+      "item2": "Bulky cargo transportation",
+      "item3": "Transport of dangerous goods (ADR)",
+      "item4": "Temperature transportation",
+      "item5": "Cargo transportation in Europe and CIS countries",
+      "item6": "Customs services"
+    }
+  },
+  "footer": {
+    "address": {
+      "line1": "Galinės str.. 1, corp. C, office 310b",
+      "line2": "Galinės village, Avižieniai",
+      "line3": "Vilnius region LT-14247, Lithuania"
+    },
+    "workHours": {
+      "title": "Darbo laikas",
+      "time": "9:00 - 18:00",
+      "1": "Mon.",
+      "2": "Tue.",
+      "3": "Wed.",
+      "4": "Thu.",
+      "5": "Fri.",
+      "6": "Sat.",
+      "7": "Sun."
+    }
+  },
+  "copyright": "All rights reserved. JSC Logway1"
+}
