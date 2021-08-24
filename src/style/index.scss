@@ -32,7 +32,7 @@ body {
 a {
   text-decoration: none;
 }
- 
+
 h2 {
   font-size: 26pt;
 }
@@ -45,15 +45,22 @@ h3 {
   padding: 1em;
   position: relative;
 
-  &:after{
-    content: "";
+  &:after {
+    content: '';
     position: absolute;
     left: 0;
     bottom: 0;
     margin: 0 auto;
     width: 100%;
     height: 2px;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0) 10%, #555, $red, #555, rgba(0, 0, 0, 0) 90%)
+    background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0) 10%,
+      #555,
+      $red,
+      #555,
+      rgba(0, 0, 0, 0) 90%
+    );
   }
 }
 
@@ -64,6 +71,30 @@ h3 {
   min-width: 300px;
 }
 
+.languageSwitcher {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 30px;
+  height: 100px;
+  background: white;
+  border-bottom-right-radius: 10px;
+
+  > * {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    cursor: pointer;
+
+    &:hover {
+      background: #ddd;
+    }
+  }
+}
+
 header {
   position: relative;
   display: flex;
@@ -72,13 +103,15 @@ header {
   min-height: 600px;
   width: 100%;
 
-  .headerLogo, .headerInfo {
+  .headerLogo,
+  .headerInfo {
     flex-basis: 50%;
     height: 100%;
   }
 
   .headerLogo {
-    background: 50% 50% / contain no-repeat url('../assets/images/logo/logo_big_text.png');
+    background: 50% 50% / contain no-repeat
+      url('../assets/images/logo/logo_big_text.png');
   }
 
   .headerInfo {
@@ -118,7 +151,7 @@ header {
         -moz-transition: all 0.5s;
         -ms-transition: all 0.5s;
         -o-transition: all 0.5s;
-}
+      }
 
       h2.active {
         background: rgba(255, 255, 255, 0.5);
@@ -156,7 +189,8 @@ section {
       left: 0;
       width: 100%;
       height: 100%;
-      background: 50% 50% / contain no-repeat url('../assets/images/logo/logo_big_white.jpg');
+      background: 50% 50% / contain no-repeat
+        url('../assets/images/logo/logo_big_white.jpg');
       opacity: 0.03;
       z-index: 1;
     }
@@ -175,7 +209,8 @@ section {
       box-shadow: 3px 3px 10px #ddd;
       z-index: 2;
 
-      img, p>i {
+      img,
+      p > i {
         margin: 0 1rem;
       }
 
@@ -187,12 +222,11 @@ section {
         margin: 1rem 0;
       }
 
-      a>i {
+      a > i {
         margin: 0 10px;
         float: right;
       }
     }
-
   }
 
   h1 {
@@ -204,14 +238,21 @@ section {
     opacity: 0;
     margin-bottom: 20px;
 
-    &:after{
-      content: "";
+    &:after {
+      content: '';
       position: absolute;
       left: 0;
       bottom: 0;
       width: 100%;
       height: 2px;
-      background: linear-gradient(to right, rgba(0, 0, 0, 0) 10%, #555, $red, #555, rgba(0, 0, 0, 0) 90%);
+      background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0) 10%,
+        #555,
+        $red,
+        #555,
+        rgba(0, 0, 0, 0) 90%
+      );
     }
   }
 
@@ -221,8 +262,8 @@ section {
     opacity: 0;
     overflow: hidden;
 
-    &:after{
-      content: "";
+    &:after {
+      content: '';
       position: absolute;
       display: block;
       right: -200px;
@@ -239,7 +280,7 @@ section {
     background: #f8f8f8 !important;
 
     .background {
-      &:after{
+      &:after {
         left: -200px;
         transform: skew(-45deg);
         background: #f8f8f8;
@@ -317,11 +358,13 @@ section.contacts {
     overflow: hidden;
     padding-top: 5em;
 
-    .companyInfo-actualInfo, .wHours *{
+    .companyInfo-actualInfo,
+    .wHours * {
       margin: 1em;
     }
 
-    .companyInfo-actualInfo p, .wHours table *{
+    .companyInfo-actualInfo p,
+    .wHours table * {
       font-size: 14pt;
     }
 
@@ -341,7 +384,7 @@ section.contacts {
         color: inherit;
       }
     }
-     
+
     .wHours {
       flex: 1;
 
@@ -353,13 +396,13 @@ section.contacts {
         width: 220px;
         font-size: 20pt;
       }
-      
+
       caption {
         padding: 10px;
         margin-bottom: 10px;
         color: white;
       }
-      
+
       table tr td {
         text-align: center;
         vertical-align: middle;
@@ -367,11 +410,11 @@ section.contacts {
         border-radius: 0px;
         color: white;
       }
-      
+
       table tr td:first-child {
         border-right: 2px solid rgb(183, 13, 13);
       }
-      
+
       table tr:nth-child(6) td {
         border-top: 2px solid rgb(183, 13, 13);
       }
@@ -383,7 +426,7 @@ section.contacts {
     height: 400px;
     background: $black;
     margin-left: 2em;
-    
+
     iframe {
       width: 100%;
       height: inherit;
@@ -445,19 +488,19 @@ footer {
       flex-wrap: wrap;
       padding: 1em 0;
 
-      &>* {
+      & > * {
         margin-bottom: 2em;
       }
-  
+
       .companyInfo-actualInfo {
         padding-left: 10%;
       }
-       
+
       .wHours {
         padding-right: 10%;
       }
     }
-  
+
     .map {
       flex-basis: 100%;
       margin: 0;
@@ -491,7 +534,8 @@ footer {
     flex-wrap: wrap;
     max-height: initial;
 
-    .headerInfo, .headerLogo {
+    .headerInfo,
+    .headerLogo {
       flex-basis: 100%;
       height: 50vh;
     }
@@ -502,7 +546,7 @@ footer {
     }
   }
 
-  section {  
+  section {
     height: 100%;
 
     h1 {
@@ -520,27 +564,27 @@ footer {
     }
 
     &.contacts {
-
-      .companyInfo {  
+      .companyInfo {
         .companyInfo-actualInfo {
           padding: 0;
           flex-basis: 100%;
           text-align: center;
 
-          p, p>a {
+          p,
+          p > a {
             font-size: 12pt;
           }
         }
-          
+
         .wHours {
           padding: 0;
           flex-basis: 100%;
-          
+
           table * {
             font-size: 12pt;
           }
         }
-      
+
         .map {
           flex-basis: 100%;
           margin: 0;
